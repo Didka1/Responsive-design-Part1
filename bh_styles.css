@@ -1,0 +1,417 @@
+      /* Border box declaration */
+      /*main styles */
+      
+      html {
+          box-sizing: border-box;
+      }
+      
+      *,
+      *:before,
+      *:after {
+          box-sizing: inherit;
+      }
+      
+      body {
+          font-family: 'Sansita', sans-serif;
+      }
+      
+      .wrapper {
+          width: 98%;
+          max-width: 1200px;
+          margin: 0 auto;
+          float: none;
+          background-color: white;
+      }
+      /*navigation */
+    body {margin:0;}
+    ul.topnav {
+        width: 98%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: aqua;
+    }
+
+    ul.topnav li {
+        float: left;
+        margin: 0.8em 1em 0.8em 1em ;
+    }
+
+    ul.topnav li a {
+      display: inline-block;
+      color: darkblue;
+      text-align: center;
+
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 1em;
+        background-color: pink;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+        padding: 0.5em;
+        margin: 0.3em 0.3em 0.3em 1em;
+        border: 0.063em solid pink;
+        border-radius: 3.125em;
+    }
+
+    ul.topnav li a:hover {
+        background-color: orange;
+         border: 0.063em solid coral;
+        border-radius: 3.125em;
+
+    }
+
+    ul.topnav li.icon {
+        display: none;
+    }
+
+
+
+      /* grid styles*/
+      
+      .row::after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+      
+      .standartcol,
+      .orange,
+      .green,
+      .blue {
+          float: left;
+          min-height: 1px;
+          width: 98%;
+      }
+      
+      [class*='col-'] {
+          float: left;
+          margin: 1% 0 1% 2%;
+          min-height: 1px;
+          border: 0.063em solid lightyellow;
+          background-color: lightyellow;
+          border-radius: 1.250em;
+      }
+      
+      .col-6 {
+          width: 14.6%;
+      }
+      
+      .col-2 {
+          width: 48%;
+      }
+      
+      .col-1 {
+          padding-top: 0.625em;
+          width: 98%;
+      }
+      
+      .col-3 {
+          width: 31%;
+      }
+      /* grid about page*/
+      
+      [class*='aboutcol-'] {
+          float: left;
+          margin: 1% 1% 1% 2%;
+          padding: 1%;
+          min-height: 1px;
+          border: 0.063em solid lightyellow;
+          background-color: lightyellow;
+          border-radius: 1.250em;
+      }
+      
+      .aboutcol-2 {
+          width: 25%;
+      }
+      
+      .aboutcol-1 {
+          width: 40%;
+      }
+      /* grid contacts page */
+      
+      [class*='contactscol-'] {
+          float: left;
+          margin: 2% 0% 5% 1%;
+          padding: 1%;
+          min-height: 1px;
+          border: 0.063em solid orange;
+          border-radius: 1.250em;
+      }
+      
+      .contactscol-4 {
+          width: 23%;
+      }
+      /* media queries*/
+      
+      @media (min-width: 360px) and (max-width: 768px) {
+          .col-2,
+          .col-6,
+          .col-1,
+          .col-3 {
+              width: 100%;
+          }
+          .aboutcol-2,
+          .aboutcol-1,
+          .contactscol-4 {
+              width: 97%;
+          }
+      }
+      
+      @media (max-width: 359px) {
+          [class*="col-"] {
+              width: 92%;
+          }
+      }
+      /* media queries main image, nav, h1 and some text*/
+      
+      @media (max-width: 701px) {
+          header {
+              background: url(spheres710.jpg) no-repeat;
+              width: 100%;
+              height: 139px;
+          }
+          h1 a {
+              text-decoration: none;
+              color: darkblue;
+              background-color: aliceblue;
+              padding: 0em;
+              border: 0.03em solid aliceblue;
+              border-radius: 1em;
+              opacity: 0.6;
+              filter: alpha(opacity=60);
+          }
+          h1 a:hover {
+              color: darkblue;
+          }
+          
+          
+          
+          
+          /* styling my text and headings*/
+          .advisetext,
+          .freshtext {
+              text-align: left;
+              width: 50%;
+          }
+          p.talkingtext {
+              width: 40%;
+              padding: 1%;
+              margin: 0%;
+              text-align: left;
+          }
+          .edpic{
+            margin-left: 20%;
+          }
+          #edtext {
+          float: right;
+              text-align: justify;
+          width: 60%;
+          margin: 1%;
+          
+      }
+          
+      }
+      
+      @media (min-width: 701px) {
+          header {
+              background: url(spheres1.jpg) no-repeat;
+              width: 100%;
+              height: 250px;
+          }
+          h1 a {
+              text-decoration: none;
+              color: darkblue;
+              background-color: aliceblue;
+              padding: 0em 0.5em 0.5em 0.5em;
+              border: 0.063em solid aliceblue;
+              border-radius: 1em;
+              opacity: 0.6;
+              filter: alpha(opacity=60);
+          }
+          h1 a:hover {
+              color: darkblue;
+          }
+          
+        
+          
+          
+          /* styling my text and headings*/
+          .advisetext,
+          .freshtext {
+              text-align: justify;
+              width: 50%;
+          }
+          p.talkingtext {
+              width: 100%;
+              padding: 1%;
+              margin: 1%;
+              text-align: justify;
+          }
+           #edtext {
+          float: right;
+               text-align: justify;
+          width: 80%;
+          margin: 1%;
+          padding: 1%;
+      }
+      }
+
+
+    @media screen and (max-width:701px) {
+      ul.topnav li:not(:first-child) {display: none;}
+      ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+      }
+    }
+
+    @media screen and (max-width:701px) {
+      ul.topnav.responsive {position: relative;}
+      ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      ul.topnav.responsive li {
+        float: none;
+        display: inline;
+      }
+      ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+      }
+    }
+          /*text and pictures extra styles */
+      
+      h3 {
+          margin: 0.700em;
+      }
+      
+      p {
+          text-align: justify;
+          margin: 0em 0.625em 0 0.625em;
+          padding: 1%;
+      }
+      
+      .advisetext,
+      .freshtext {
+          float: right;
+          padding-left: 0;
+          margin-left: 0;
+      }
+      
+      p.talkingtext {
+          display: inline;
+          float: right;
+      }
+      
+      
+      
+      .continueLink {
+          color: orangered;
+      }
+      
+      a:hover {
+          color: green;
+      }
+      
+      .quote {
+          margin: 20% 15% 15% 5%;
+          padding: 5%;
+          border: 0.063em solid orange;
+          border-radius: 1.250em;
+          background-color: coral;
+          -webkit-box-shadow: 40px 38px 84px 0px rgba(166, 87, 3, 1);
+          -moz-box-shadow: 40px 38px 84px 0px rgba(166, 87, 3, 1);
+          box-shadow: 40px 38px 84px 0px rgba(166, 87, 3, 1);
+      }
+    .mexicanmask, .girraffes{
+        float: left;
+        padding-left: 1%;
+        width: auto;
+        max-width: 100%;
+    }
+          div img {
+             width: 100%;
+              max-width: 150px;
+              border-radius: 0.625em;
+              padding: 2%;
+          }
+    i{
+        margin-right: 3%;
+    }
+      /* h2/3/4 styles*/
+      
+      h2,
+      h3,
+      h4 {
+          float: left;
+          padding: 0.625em 0.625em 0.625em 1.250em;
+          width: 100%;
+      }
+      
+      .orange {
+          background: rgba(255, 221, 179, 1);
+          background: -moz-linear-gradient(left, rgba(255, 221, 179, 1) 0%, rgba(255, 246, 235, 0.89) 39%, rgba(255, 255, 255, 0.89) 53%);
+          background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 221, 179, 1)), color-stop(39%, rgba(255, 246, 235, 0.89)), color-stop(53%, rgba(255, 255, 255, 0.89)));
+          background: -webkit-linear-gradient(left, rgba(255, 221, 179, 1) 0%, rgba(255, 246, 235, 0.89) 39%, rgba(255, 255, 255, 0.89) 53%);
+          background: -o-linear-gradient(left, rgba(255, 221, 179, 1) 0%, rgba(255, 246, 235, 0.89) 39%, rgba(255, 255, 255, 0.89) 53%);
+          background: -ms-linear-gradient(left, rgba(255, 221, 179, 1) 0%, rgba(255, 246, 235, 0.89) 39%, rgba(255, 255, 255, 0.89) 53%);
+          background: linear-gradient(to right, rgba(255, 221, 179, 1) 0%, rgba(255, 246, 235, 0.89) 39%, rgba(255, 255, 255, 0.89) 53%);
+          
+      }
+      
+      .green {
+          background: rgba(218, 247, 191, 1);
+          background: -moz-linear-gradient(left, rgba(218, 247, 191, 1) 0%, rgba(252, 255, 245, 1) 28%, rgba(252, 255, 245, 1) 36%);
+          background: -webkit-gradient(left top, right top, color-stop(0%, rgba(218, 247, 191, 1)), color-stop(28%, rgba(252, 255, 245, 1)), color-stop(36%, rgba(252, 255, 245, 1)));
+          background: -webkit-linear-gradient(left, rgba(218, 247, 191, 1) 0%, rgba(252, 255, 245, 1) 28%, rgba(252, 255, 245, 1) 36%);
+          background: -o-linear-gradient(left, rgba(218, 247, 191, 1) 0%, rgba(252, 255, 245, 1) 28%, rgba(252, 255, 245, 1) 36%);
+          background: -ms-linear-gradient(left, rgba(218, 247, 191, 1) 0%, rgba(252, 255, 245, 1) 28%, rgba(252, 255, 245, 1) 36%);
+          background: linear-gradient(to right, rgba(218, 247, 191, 1) 0%, rgba(252, 255, 245, 1) 28%, rgba(252, 255, 245, 1) 36%);
+          
+      }
+      
+      .blue {
+          background: rgba(182, 212, 246, 1);
+          background: -moz-linear-gradient(left, rgba(182, 212, 246, 1) 0%, rgba(213, 231, 250, 1) 12%, rgba(216, 233, 250, 1) 13%, rgba(250, 253, 254, 1) 26%);
+          background: -webkit-gradient(left top, right top, color-stop(0%, rgba(182, 212, 246, 1)), color-stop(12%, rgba(213, 231, 250, 1)), color-stop(13%, rgba(216, 233, 250, 1)), color-stop(26%, rgba(250, 253, 254, 1)));
+          background: -webkit-linear-gradient(left, rgba(182, 212, 246, 1) 0%, rgba(213, 231, 250, 1) 12%, rgba(216, 233, 250, 1) 13%, rgba(250, 253, 254, 1) 26%);
+          background: -o-linear-gradient(left, rgba(182, 212, 246, 1) 0%, rgba(213, 231, 250, 1) 12%, rgba(216, 233, 250, 1) 13%, rgba(250, 253, 254, 1) 26%);
+          background: -ms-linear-gradient(left, rgba(182, 212, 246, 1) 0%, rgba(213, 231, 250, 1) 12%, rgba(216, 233, 250, 1) 13%, rgba(250, 253, 254, 1) 26%);
+          background: linear-gradient(to right, rgba(182, 212, 246, 1) 0%, rgba(213, 231, 250, 1) 12%, rgba(216, 233, 250, 1) 13%, rgba(250, 253, 254, 1) 26%);
+          
+      }
+      
+      .yellow {
+          background: rgba(255, 237, 209, 1);
+          background: -moz-linear-gradient(left, rgba(255, 237, 209, 1) 0%, rgba(255, 237, 209, 1) 0%, rgba(255, 255, 255, 1) 37%);
+          background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 237, 209, 1)), color-stop(0%, rgba(255, 237, 209, 1)), color-stop(37%, rgba(255, 255, 255, 1)));
+          background: -webkit-linear-gradient(left, rgba(255, 237, 209, 1) 0%, rgba(255, 237, 209, 1) 0%, rgba(255, 255, 255, 1) 37%);
+          background: -o-linear-gradient(left, rgba(255, 237, 209, 1) 0%, rgba(255, 237, 209, 1) 0%, rgba(255, 255, 255, 1) 37%);
+          background: -ms-linear-gradient(left, rgba(255, 237, 209, 1) 0%, rgba(255, 237, 209, 1) 0%, rgba(255, 255, 255, 1) 37%);
+          background: linear-gradient(to right, rgba(255, 237, 209, 1) 0%, rgba(255, 237, 209, 1) 0%, rgba(255, 255, 255, 1) 37%);
+          
+      }
+      /*footer*/
+      
+      footer {
+          clear: both;
+          width: 100%;
+          background-color: coral;
+          border-top: 0.125em solid darkblue;
+          border-bottom: 0.125em solid darkblue;
+          color: darkblue;
+          font-size: 1em;
+      }
+      
+      p#center {
+          text-align: center;
+      }
+
+
+
+
+

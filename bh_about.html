@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Be Happy - home</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="bh_styles.css">
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <header class="standartcol">
+                <h1><a href="spheres.jpg">Be happy! Live free!</a></h1>
+            </header>
+        </div>
+        <div class="row">
+            <nav>
+                <ul class="topnav" id="myTopnav">
+                    <li><a class="active" href="bh_index.html">Home</a></li>
+                    <li><a href="bh_about.html">About</a></li>
+                    <li><a href="#">Advices</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="bh_contacts.html">Contacts</a></li>
+                    <li class="icon">
+                        <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section class="row sameHeights">
+            <div class="aboutcol-2" data-key="sameHeights">
+                <h3 class="orange">About our team</h3>
+                <p>We are a little group of not so young people, but we believe that everybody deserves to be happy, every day of his life. We will try to make your day more colorful and happy with good ideas for events for your free time or with some advises about positive thinking.
+                </p>
+                <img src="happy-girafes1.jpg" alt="girafes">
+            </div>
+            <div class="aboutcol-1" data-key="sameHeights">
+                <h3 class="yellow">What are our goals?</h3>
+                <p class="quote">“We want to make the world a better place, but nobody gives us a source code!”</p>
+                <p>That is the scripture of one ours editor favorites T-shirts. And the truth is that we strongly believe that only you have the source code for you world and the key for your personal happiness. It is true that our days are really dynamic and it is almost impossible to be positive in every situation. We don’t control every event in our life’s and that can be really scary, but there is a positive side we control our thoughts and that can be really helpful. So… Our goal is to help you to make your thoughts more positive and to feel more satisfied and happy.
+                </p>
+            </div>
+            <div class="aboutcol-2" data-key="sameHeights">
+                <h3 class="green">What can you find in our page? </h3>
+                <!-- workin to my picture -->
+                <picture class="girraffes">
+                    <!-- [if IE 9] <video style-"display: none;"><![endif] -->
+                    <source srcset="love-giraffes350.jpg" media="(min-width: 1200px)">
+                    <source srcset="love-giraffes200.jpg" media="(min-width: 701px)">
+                    <!-- [if IE 9] </video><![endif] -->
+                    <img src="love-giraffes200.jpg" alt="giraffes">
+                </picture>
+
+
+
+                <!-- workin to my picture -->
+
+                <p>We update our page every week. We have weekly theme divided at six new pieces of information. We also have new advices and our editor opinion on a special topic. Every month we will provide you information and reviews about new books and events. We really hope that you will like our page!
+                </p>
+            </div>
+        </section>
+
+        <div class="row">
+
+            <footer class="standartcol">
+                <p id="center">Smile, we only live ones! &copy; 2017 </p>
+
+            </footer>
+
+        </div>
+    </div>
+    <script src="bh.js"></script>
+    <script type="text/javascript">
+        if ('addEventListener' in window) {
+            window.addEventListener('resize', function () {
+                sameHeights();
+            });
+            window.addEventListener('load', function () {
+                sameHeights();
+            });
+        }
+    </script>
+</body>
+
+</html>

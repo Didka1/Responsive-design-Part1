@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Be Happy - home</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="bh_styles.css">
+    <script src=" https://use.fontawesome.com/216ba9428f.js"></script>
+
+
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <header class="standartcol">
+                <h1><a href="spheres.jpg">Be happy! Live free!</a></h1>
+            </header>
+        </div>
+
+
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li><a class="active" href="bh_index.html">Home</a></li>
+                <li><a href="bh_about.html">About</a></li>
+                <li><a href="#">Advices</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="bh_contacts.html">Contacts</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <div class="row">
+            <h3 class="orange">Want to find us?</h3>
+        </div>
+        <section class="row sameHeights">
+            <div class="contactscol-4" data-key="sameHeights">
+                <h4 class="green">Online?</h4>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> On email - bh.@gmail.com</p>
+                <p><i class="fa fa-facebook-square" aria-hidden="true"></i>On facebook - BeHappy</p>
+                <p><i class="fa fa-twitter-square" aria-hidden="true"></i> On twitter - TwitBeHappy</p>
+            </div>
+            <div class="contactscol-4" data-key="sameHeights">
+                <h4 class="green">At the reality?</h4>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Bulgaria, Sofia, Str:Racovski N=1 </p>
+                <p><i class="fa fa-phone-square" aria-hidden="true"></i> 0111222333444
+                </p>
+            </div>
+            <div class="contactscol-4" data-key="sameHeights">
+                <h4 class="green">And we are?</h4>
+                <p>Diana Ivanova</p>
+                <p>Petar Petrov</p>
+                <p>Ivan Ivanov</p>
+            </div>
+            <div class="contactscol-4" data-key="sameHeights">
+                <h4 class="green">And please... </h4>
+                <p>don't forget to smile, it is important for your health and for our soul!</p>
+            </div>
+        </section>
+
+        <div class="row">
+
+            <footer class="standartcol">
+                <p id="center">Smile, we only live ones! &copy; 2017 </p>
+
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="bh.js"></script>
+    <script type="text/javascript">
+        if ('addEventListener' in window) {
+            window.addEventListener('resize', function () {
+                sameHeights();
+            });
+            window.addEventListener('load', function () {
+                sameHeights();
+            });
+        }
+    </script>
+</body>
+
+</html>
